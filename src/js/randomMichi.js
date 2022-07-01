@@ -3,7 +3,7 @@ import { API_URL } from "./api.js";
 
 const d = document;
 const queryParameters = [
-    '?limit=8',
+    '?limit=4',
 ].join('');
 
 const $containerMichis = d.querySelector('.containerMichis');
@@ -17,6 +17,7 @@ export const reload = async () => {
             const $figure = d.createElement('figure');
             const $img = d.createElement('img');
             const $button = d.createElement('button');
+            const $name = d.createElement('h3');
             
             $figure.classList.add('card-michi');
             $img.classList.add('img-randomMichi');

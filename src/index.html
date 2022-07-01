@@ -8,15 +8,44 @@
     <title>Curso de Api Rest</title>
 </head>
 <body>
-    <h1 class="title">App Cats</h1>
-        <div class="container-btns">
+    <header class="header">
+        <section class="container-title">
+            <h1 class="title">App Cats</h1>
+        </section>
+        <nav class="header_nav">
+            <a href="#favorites">Favorites</a>
+            <a href="#random">Cats Random</a>
+        </nav>
+    </header>
+    <main>
+        <section class="container-presentation">
+            <div class="container-image">
+                <img src="https://www.zooplus.es/magazine/wp-content/uploads/2020/05/Adoptar-un-gato-durante-la-cuarentena-por-el-coronavirus.jpeg" alt="">
+            </div>
+            <div class="container-text">
+                <h2 class="container-text__title">Adopta un michi <span>😻</span></h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut explicabo beatae omnis amet iusto voluptate culpa, non quod animi quas cum enim, laboriosam assumenda aliquam, officiis tenetur ex molestias provident.
+                </p>
+            </div>
+        </section>
+        <section class="container-form">
+            <div class="drop-area ">
+                <h2 class="drop-area__title">Arrastra y suelta tus Michis</h2>
+                <span class="drop-area__span">O</span>
+                <button class="drop-area__btn" type="button">Selecciona tus imagenes<span>😸</span></button>
+                <input type="file" name="file" id="input-file" hidden multiple>
+            </div>
+            <div class="preview"></div>
+        </section>
+        <div id="random" class="container container-btns">
             <button class="container-btns__btn">🔃</button>
         </div>
         <section class="containerMichis"></section>
-    <div class="container-title">
-        <h2 class="title title_fav">Favorites</h2>
-    </div>
-    <section class="michis-favoritos"></section>
-
+        <div id="favorites" class="container container-title">
+            <h2 class="title title_fav">Favorites</h2>
+        </div>
+        <section class="michis-favoritos"></section>
+    </main>
     <script type="module" src="./js/main.js"></script>
 </html>
