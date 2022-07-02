@@ -33,12 +33,12 @@ function processFile(file) {
 
     if(validExtension.includes(docType)){
         //Archivo valido
-        console.log("Archivo valido :D", file);
+        //console.log("Archivo valido :D", file);
         const fileReader = new FileReader();
         const id = `file-${Math.random().toString(32).substring(7)}`;
 
         fileReader.addEventListener('load', e => {
-            console.log(id);
+            //console.log(id);
             const fileUrl = fileReader.result;
             const image = `
                 <div id="${id}" class="file-container">
